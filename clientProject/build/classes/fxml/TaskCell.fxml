@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="taskCell" prefHeight="212.0" prefWidth="598.0" style="-fx-background-color: #ffffff;" stylesheets="@style_sheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuButton fx:id="menu" layoutX="552.0" layoutY="173.0" mnemonicParsing="false">
+        <items>
+          <MenuItem fx:id="update" mnemonicParsing="false" text="Update" />
+          <MenuItem fx:id="delete" mnemonicParsing="false" text="Delete" />
+            <MenuItem fx:id="AssignTo" mnemonicParsing="false" text="Assign To" />
+            <MenuItem fx:id="comment" mnemonicParsing="false" text="Comments" />
+        </items>
+      </MenuButton>
+      <TextField fx:id="details" editable="false" layoutX="14.0" layoutY="49.0" prefHeight="114.0" prefWidth="572.0" />
+      <Label id="textLables" fx:id="status" layoutX="14.0" layoutY="6.0" prefHeight="40.0" prefWidth="124.0" text="Label" />
+      <Label id="textLables" fx:id="teamMate" layoutX="507.0" layoutY="6.0" prefHeight="33.0" prefWidth="77.0" text="Label" />
+   </children>
+</AnchorPane>

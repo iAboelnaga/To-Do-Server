@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="734.0" stylesheets="@style_sheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+    <top>
+        
+        <HBox fx:id="topHbox" alignment="CENTER_RIGHT" styleClass="top">
+             <Label id="top_text" fx:id="userName" alignment="CENTER" prefWidth="87.0" text="username">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin></Label> 
+            <ImageView fx:id="addMateImageView" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                <image>
+                    <Image url="@addTeamMate.png" />
+                </image>
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="teamMatesImagView" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                <image>
+                    <Image url="@teamMate.png" />
+                </image>
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="notifyImagView" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                <image>
+                    <Image url="@notification.png" />
+                </image>
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </HBox.margin>
+            </ImageView>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </HBox>
+    </top>
+    <left>
+        <TreeView fx:id="projectTreeView" prefHeight="450.0" prefWidth="273" styleClass="tree_view">
+            <BorderPane.margin>
+                <Insets bottom="1.0" left="1.0" right="1.0" top="2.0" />
+            </BorderPane.margin>
+        </TreeView>
+    </left>
+    <right>
+        <StackPane fx:id="leftBox" alignment="TOP_RIGHT"> 
+            <JFXListView fx:id="notifuList" maxHeight="350.0" prefHeight="350.0" prefWidth="189.0" BorderPane.alignment="TOP_CENTER" />
+            <JFXListView fx:id="teamMateList" maxHeight="350.0" prefHeight="350.0" prefWidth="219.0" BorderPane.alignment="TOP_CENTER" />
+
+        </StackPane>
+    </right>
+    <center>
+        <HBox fx:id="centerBox" alignment="CENTER" style="-fx-background-color: #ffffff;">
+            <Button id="button" fx:id="creatProject" defaultButton="true" prefHeight="40" prefWidth="301.0" text="create project" BorderPane.alignment="CENTER" />
+        </HBox>
+    </center>
+ 
+</BorderPane>

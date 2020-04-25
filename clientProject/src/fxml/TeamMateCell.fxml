@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Row" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="212.0" style="-fx-background-color: #fff;" stylesheets="@style_sheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <ImageView fx:id="statusImg" fitHeight="16.0" fitWidth="18.0" layoutX="5.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+      <Label id="notificationText" fx:id="teamMateLable" alignment="TOP_CENTER" layoutX="29.0" layoutY="7.0" maxWidth="1.7976931348623157E308" prefHeight="16.0" prefWidth="82.0" textFill="WHITE" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   <Label fx:id="stateLable" layoutX="111.0" layoutY="7.0" prefHeight="31.0" prefWidth="65.0" />
+   <ImageView fx:id="deleteimV" fitHeight="23.0" fitWidth="28.0" layoutX="176.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+ 
+</AnchorPane>

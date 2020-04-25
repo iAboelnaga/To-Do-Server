@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="serverGUI.ServerGuiController">
+   <center>
+      <VBox prefHeight="124.0" prefWidth="659.0" style="-fx-background-color: #555454;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="82.0" prefWidth="659.0" spacing="10.0">
+               <children>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <JFXButton fx:id="startButton" prefHeight="66.0" prefWidth="200.0" style="-fx-background-color: #40a1fb;" text="Start" textFill="#f5f4f4" />
+                  <JFXButton fx:id="stopButton" prefHeight="66.0" prefWidth="200.0" style="-fx-background-color: #40a1fb;" text="Stop" textFill="WHITE" />
+                  <Region layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </HBox>
+            <BarChart fx:id="userChart" style="-fx-background-color: #555454;" VBox.vgrow="ALWAYS">
+              <xAxis>
+                <CategoryAxis fx:id="userAxis" side="BOTTOM" tickLabelFill="WHITE" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="numAxis" side="LEFT" tickLabelFill="WHITE" />
+              </yAxis>
+            </BarChart>
+            <JFXButton fx:id="refreshButton" maxWidth="1.7976931348623157E308" style="-fx-background-color: #40a1fb;" text="refresh" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="30.0" right="15.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox alignment="CENTER" maxWidth="353.0" prefHeight="450.0" prefWidth="273.0" style="-fx-background-color: #e5e4e4;" BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="200.0" prefWidth="200.0" />
+            <ImageView fitHeight="220.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo1.png" />
+               </image>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ImageView>
+            <Label prefHeight="30.0" prefWidth="84.0" text="Todo">
+               <font>
+                  <Font name="Palatino Linotype" size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.5142857142857142" startY="0.22857142857142865">
+                     <stops>
+                        <Stop color="#1682bc" />
+                        <Stop color="#04313c" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="30.0" layoutY="335.0" text="List">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="24.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.8476190476190476">
+                     <stops>
+                        <Stop color="#2a4870" />
+                        <Stop color="#24bee3" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </Label>
+            <Region prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

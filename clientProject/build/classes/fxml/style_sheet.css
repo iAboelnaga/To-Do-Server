@@ -1,0 +1,116 @@
+/*
+ * Empty Stylesheet file.
+ */
+/*left VBox*/
+.left_side{
+    -fx-background-color:  #40a1fb;
+    -fx-alignment: CENTER;
+}
+.tree_view{
+    -fx-background-color:  #68829E;
+}
+.top{
+    -fx-background-color:  #40a1fb;
+    -fx-alignment: RIGHT;
+}
+/*center VBox*/
+.center_pane{
+    -fx-padding: 15,20,30,40;
+    -fx-background-color: #ffffff;
+    -fx-alignment: CENTER;
+
+}
+#headerLable{
+    -fx-font-size: 20px;
+    -fx-background-color:  #40a1fb;
+    -fx-alignment: CENTER;
+}
+#slogan{
+    -fx-font-size: 20px;
+    -fx-font-family: cursive;
+    -fx-padding: 5px;
+    -fx-text-fill: #ffffff;
+}
+#textFiled{
+    -fx-text-box-border: #40a1fb;
+}
+#textLables{
+    -fx-font-size: 20px;
+    -fx-font-family: cursive;
+    -fx-padding: 5px;
+    -fx-text-fill:  #40a1fb;
+    -fx-text-alignment: LEFT;
+}
+#button {
+    -fx-background-color:#ffffff ;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-color:#40a1fb;
+    -fx-text-fill: #40a1fb;
+    -fx-border-width: 1 1 1 1;
+    -fx-font-size: 20px;
+}
+
+#button:hover {
+    -fx-background-color: #40a1fb ;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-color:#40a1fb;
+    -fx-text-fill: #ffffff;
+    -fx-border-width: 1 1 1 1;
+    -fx-font-size: 20px;
+}
+#top_text{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20px;
+}
+#buttonNotificationAccept
+{
+    -fx-background-color:#ffffff ;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-color:#21bf73;
+    -fx-text-fill: #21bf73;
+    -fx-border-width: 1 1 1 1;
+    -fx-font-size: 10px;
+}
+#buttonNotificationReject
+{
+    -fx-background-color:#ffffff ;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-color:#c02739;
+    -fx-text-fill: #c02739;
+    -fx-border-width: 1 1 1 1;
+    -fx-font-size: 10px;
+}
+
+#buttonNotificationAccept:hover
+{
+    -fx-background-color:#21bf73 ;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-color:#21bf73;
+    -fx-text-fill: #ffffff;
+    -fx-border-width: 1 1 1 1;
+    -fx-font-size: 10px;
+}
+#buttonNotificationReject:hover
+{
+-fx-background-color:#c02739 ;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-color:#c02739;
+    -fx-text-fill: #ffffff;
+    -fx-border-width: 1 1 1 1;
+    -fx-font-size: 10px;
+}
+#notificationText
+{
+    -fx-font-size: 15px;
+    -fx-font-family: cursive;
+    -fx-padding: 5px;
+    -fx-text-fill: #1380a9;
+    -fx-text-alignment: LEFT;
+}
+
